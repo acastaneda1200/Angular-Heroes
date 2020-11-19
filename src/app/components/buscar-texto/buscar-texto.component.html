@@ -1,0 +1,20 @@
+<h1>Buscando.. <small>{{termino}}</small></h1>
+<hr>
+
+<div class="card-columns animated fadeIn fast">
+    
+    <div *ngFor="let heroes of heroes; let i = index" class="card animated fadeIn fast">
+        <img class="card-img-top" src="{{heroes.img}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{heroes.nombre}}</h5>
+            <p class="card-text">{{heroes.bio}}</p>
+            
+            <button (click)="verHeroe(i)"  class="btn btn-outline-primary btn-block">Ver mas</button>
+
+            <!-- <a [routerLink]="['/heroe',i ]" class="btn btn-outline-primary">Ver mas</a> -->
+        </div>
+    </div>
+
+    
+
+</div>

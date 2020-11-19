@@ -14,6 +14,10 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 
 //servicios
 import { HeroesService } from "./services/heroes.service";
+import { HeroeComponent } from './components/heroe/heroe.component';
+import { BuscarHeroeComponent } from './components/buscar-heroe/buscar-heroe.component';
+import { BuscarTextoComponent } from './components/buscar-texto/buscar-texto.component';
+import { HeroeCardComponent } from './components/heroe-card/heroe-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { HeroesService } from "./services/heroes.service";
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroeComponent,
+    BuscarHeroeComponent,
+    BuscarTextoComponent,
+    HeroeCardComponent
   ],
   imports: [
     BrowserModule,
